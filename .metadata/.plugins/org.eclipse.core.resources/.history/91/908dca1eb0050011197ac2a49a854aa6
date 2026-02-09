@@ -1,0 +1,17 @@
+package com.in28minutes.learn_spring_framework;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration // this indicates that this is a spring configuration class
+public class HelloWorldConfiguration {
+	@Bean
+	public String name() {
+		return "Kapil";
+	}
+	
+	@Bean
+	public int age() {
+		return 24;
+	}
+}

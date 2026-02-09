@@ -1,0 +1,12 @@
+package com.in28minutes.learnspringframework.business;
+
+@Component
+public class MySQLDataService implements IBusinessService {
+
+	@Override
+	public int[] retrieveData() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
