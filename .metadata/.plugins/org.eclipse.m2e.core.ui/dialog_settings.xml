@@ -2,6 +2,10 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="/home/kapil/eclipse-workspace/learn-jpa-and-hibernate"/>
+			<item value="/home/kapil/eclipse-workspace/learn-spring-boot"/>
+			<item value="/home/kapil/eclipse-workspace/learn-maven"/>
+			<item value="/home/kapil/eclipse-workspace/learn-spring-framework"/>
 			<item value="/home/kapil/eclipse-workspace/learn-spring-framework-02"/>
 			<item value="/home/kapil/eclipse-workspace/learn-spring-framework-01"/>
 		</list>
@@ -13,5 +17,9 @@
 			<item value="[groupId].[artifactId]-[version]"/>
 			<item value="[name]"/>
 		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
 </section>

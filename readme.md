@@ -69,3 +69,44 @@ Things in Jakarta EE
 - jakarta bean validation
 - jakarta contexts and dependency injection ( cdi )
 - jakarta persistence ( jpa )
+
+@Component - Generic annotation application for any class
+Base - for all spring stereotype annotations
+specializations of @component:
+- @Service - indicates that an annotated class has business logic
+- @Controller - indicates that an annotated class is a "Controller"
+- @Repository - indicates that an annotated class is used to retrieve and manipulate data in a database
+- @Named - @Component
+- @Inject - @Autowired
+- pom.xml - project object model
+- when we run mvn package then it validate -> compile -> test -> package
+- mvn clean would clean the target folder which contains the jar file
+- mvn install would copy the local jar file to local maven repository
+- mvn compile would compile the source code
+- mvn help:effective-pom
+- mvn package: validate -> compile -> test -> package
+- mvn test: validate -> compile -> test
+- mvn spring-boot:run
+- mvn spring-boot:build-image
+
+- main goal of spring-boot is create production-ready applications quickly
+
+- thing which are helping to make spring boot project faster
+	- spring initializer
+	- spring boot starter projects
+	- auto configuration
+	- spring boot devtools
+
+- types of logging
+- trace, debug, info, warning, error, off
+- to create jar file right click the project then run as maven build and in goals type clean install
+- then locate this jar file from terminal and type java -jar jar_file_name.jar
+- add this line management.endpoints.web.exposure.include=* in application.properties to expose all actuator endpoints.
+- instead of * use health,metrics so more cpu and memory is not used
+- spring helps is the core framework
+- spring mvc is used for web related work
+- spring boot is a wrapper to use spring and spring mvc easily and also it enables non functional requirements.
+- for h2 database
+	- spring.h2.console.enabled=true add this line to application.properties and go to localhost:8080/h2-console
+	- spring.datasource.url=jdbc:h2:mem:testdb add this to application.properties so that on every restart of server h2 database url will not change.
+
