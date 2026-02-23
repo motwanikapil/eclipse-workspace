@@ -110,3 +110,25 @@ specializations of @component:
 	- spring.h2.console.enabled=true add this line to application.properties and go to localhost:8080/h2-console
 	- spring.datasource.url=jdbc:h2:mem:testdb add this to application.properties so that on every restart of server h2 database url will not change.
 
+- if you want to see the sql used by jpa then add this line
+spring.jpa.show-sql=true
+
+- jpa is the api and hibernate is one of the popular implementations of jpa.
+- w3c definition of a web service
+	- software system designed to support interoperable machine-to-machine interaction over a network
+
+- all requests first come to DispatcherServlet ( also known as front controller pattern )
+- objects response gets converted to json by ResponseBody and JacksonHttpMessageConverters ( comes due to AutoConfiguration )
+- Auto configuration also does the error mapping ( ErrorMvcAutoConfiguration )
+- Now all the jars are available because all the jars are added to the starter projects and many things are auto configured for eg. usage of tomcat server.
+- status codes
+	200 - success
+	201 - created
+	204 - no content
+	401 - unauthorized
+	400 - bad request
+	404 - resouce not found
+	500 - server error
+	
+localhost:8080/swagger-ui - for api documentation
+
