@@ -33,4 +33,5 @@
     <fullyQualifiedTypeName name="jakarta.persistence.Column"/>
     <fullyQualifiedTypeName name="jakarta.persistence.PersistenceContext"/>
     <fullyQualifiedTypeName name="jakarta.transaction.Transactional"/>
+    <fullyQualifiedTypeName name="org.springframework.context.i18n.LocaleContextHolder"/>
 </qualifiedTypeNameHistroy>
