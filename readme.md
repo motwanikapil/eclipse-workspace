@@ -132,3 +132,11 @@ spring.jpa.show-sql=true
 	
 localhost:8080/swagger-ui - for api documentation
 
+- hypermedia as the engine of application state ( hateoas )
+	- telling user what other links they can access
+	- HAL ( JSON hypertext application language) - simple format that gives a consistent and easy way to hyperlink between resources in your api.
+	- spring hateoas - generate hal responses with hyperlinks to resources
+	
+- filtering
+	- static filtering: same filtering for a bean across different REST api
+	- for json it can be done using JsonIgnore and JsonIgnoreProperties("field1") ( class level )
