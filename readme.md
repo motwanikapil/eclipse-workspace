@@ -140,3 +140,8 @@ localhost:8080/swagger-ui - for api documentation
 - filtering
 	- static filtering: same filtering for a bean across different REST api
 	- for json it can be done using JsonIgnore and JsonIgnoreProperties("field1") ( class level )
+
+- spring boot actuator: monitor and manage your application in your production
+- spring boot starter actuator: starter to add spring boot actuator to your application.
+- it provides no of endpoints
+- /health for health, /metrics for metrics, /beans for list of beans and /mappings for request mappings
