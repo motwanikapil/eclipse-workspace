@@ -7,6 +7,8 @@ import java.util.function.Predicate;
 
 import org.springframework.stereotype.Component;
 
+import com.in28minutes.rest.webservices.restful_web_services.user.User;
+
 @Component
 public class UserDaoService {
 	private static List<User> users = new ArrayList<>();

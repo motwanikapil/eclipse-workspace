@@ -145,3 +145,6 @@ localhost:8080/swagger-ui - for api documentation
 - spring boot starter actuator: starter to add spring boot actuator to your application.
 - it provides no of endpoints
 - /health for health, /metrics for metrics, /beans for list of beans and /mappings for request mappings
+- docker command to run mysql container
+docker run --detach --env MYSQL_ROOT_PASSWORD=dummypassword --env MYSQL_USER=social-media-user --env MYSQL_PASSWORD=dummypassword --env MYSQL_DATABASE
+=social-media-database --name mysql --publish 3306:3306 mysql:8-oracle
