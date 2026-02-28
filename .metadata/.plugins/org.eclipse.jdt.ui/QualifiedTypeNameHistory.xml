@@ -33,12 +33,13 @@
     <fullyQualifiedTypeName name="org.springframework.context.i18n.LocaleContextHolder"/>
     <fullyQualifiedTypeName name="org.springframework.hateoas.server.mvc.WebMvcLinkBuilder"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.in28minutes.rest.webservices.restful_web_services.filtering.View.View1"/>
     <fullyQualifiedTypeName name="com.in28minutes.rest.webservices.restful_web_services.filtering.View.View2"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
     <fullyQualifiedTypeName name="jakarta.annotation.Generated"/>
     <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
     <fullyQualifiedTypeName name="com.in28minutes.rest.webservices.restful_web_services.helloworld.user.User"/>
     <fullyQualifiedTypeName name="java.util.Optional"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.in28minutes.rest.webservices.restful_web_services.user.User"/>
 </qualifiedTypeNameHistroy>
