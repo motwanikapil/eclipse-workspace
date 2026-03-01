@@ -148,3 +148,19 @@ localhost:8080/swagger-ui - for api documentation
 - docker command to run mysql container
 docker run --detach --env MYSQL_ROOT_PASSWORD=dummypassword --env MYSQL_USER=social-media-user --env MYSQL_PASSWORD=dummypassword --env MYSQL_DATABASE
 =social-media-database --name mysql --publish 3306:3306 mysql:8-oracle
+
+### Spring Security
+- the following are the filter chains the request go through
+1. all requests should be authenticated
+2. if a request is not authenticated, a web page is shown
+3. CSRF -> it affects POST , PUT
+
+the above is the default filter chain, if we want to modify filter chain then we need to make the chain again
+- we will make configuration and we make a bean in that and we make a filterchain in the bean
+
+- what is aspect of programming
+- spring aop - not a complete aop solution but very popular
+- only works with spring beans
+- intercept method calls to spring beans
+- AspectJ - complete aop solution
+- it gives lot of flexibility
