@@ -164,3 +164,18 @@ the above is the default filter chain, if we want to modify filter chain then we
 - intercept method calls to spring beans
 - AspectJ - complete aop solution
 - it gives lot of flexibility
+
+- compile time
+	- advice - what code to execute ( what )
+		eg. logging, authenticatoin
+	- pointcut - expression that identifies method calls to be intercepted ( when )
+		eg. execution(com.in28minutes.aop.data.*.*(..)) ( execution pointcut )
+	- what + when = aspect
+	- weaver is the framework that implements aop
+	- join point - when pointcut condition is true, the advice is executed. A specific execution instance of an advice is called a join point.
+	- @After - so something after a method is executed irrespective of whether:
+		1. method executes successfully
+		2. method throws an exception
+	- @AfterReturning - do something only when a method returns successfully
+	- @AfterThrowing - Do something only when a method throws an exception
+	- @Around - do something around a method execution
