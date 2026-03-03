@@ -44,4 +44,5 @@
     <fullyQualifiedTypeName name="com.in28minutes.rest.webservices.restful_web_services.user.User"/>
     <fullyQualifiedTypeName name="org.slf4j.Logger"/>
     <fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
+    <fullyQualifiedTypeName name="java.lang.annotation.RetentionPolicy"/>
 </qualifiedTypeNameHistroy>

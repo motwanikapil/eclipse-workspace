@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 import org.springframework.stereotype.Service;
 
+import com.in28minutes.learn_spring_aop.aopexample.annotations.TrackTime;
 import com.in28minutes.learn_spring_aop.aopexample.data.DataService2;
 
 // same as component but we are in a business service to it is better to use this @Service
@@ -15,7 +16,8 @@ public class BusinessService2 {
 		super();
 		this.dataService2 = dataService2;
 	}
-
+	
+	@TrackTime
 	public int calculateMin() {
 		int[] data = dataService2.retriveData();
 		

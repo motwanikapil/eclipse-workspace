@@ -20,19 +20,19 @@ public class LoggingAspect {
 	// pointcut - when?
 	// execution(* PACKAGE.*.*(..))
 	// execution(* com.in28minutes.learnspringapp.appexample.business.*.*(..))
-	@Before("execution(* com.in28minutes.learn_spring_aop.aopexample.business.*.*(..))")
+	@Before("com.in28minutes.learn_spring_aop.aopexample.aspects.CommonPointcutConfig.dataPackageConfigUsingBean()")
 	public void logMethodCallBeforeExecution(JoinPoint joinPoint) {
 		// logic - what to do
 		logger.info("Before Aspect - {} is called with arguments - {}", joinPoint, joinPoint.getArgs());
 	}
 	
-	@After("execution(* com.in28minutes.learn_spring_aop.aopexample.business.*.*(..))")
+	@After("com.in28minutes.learn_spring_aop.aopexample.aspects.CommonPointcutConfig.businessPackageConfig()")
 	public void logMethodCallAfterExection(JoinPoint joinPoint) {
 		// logic - what to do
 		logger.info("After Aspect - {} is called with arguments", joinPoint);
 	}
 	
-	@AfterThrowing(pointcut = "execution(* com.in28minutes.learn_spring_aop.aopexample.business.*.*(..))", 
+	@AfterThrowing(pointcut = "com.in28minutes.learn_spring_aop.aopexample.aspects.CommonPointcutConfig.businessAndDataPackageConfig()", 
 			throwing = "exception" 
 	)
 	public void logMethodCallAfterException(JoinPoint joinPoint, Exception exception) {
@@ -40,7 +40,7 @@ public class LoggingAspect {
 		logger.info("After throwing - {} has thrown an exception {}", joinPoint, exception);
 	}
 	
-	@AfterReturning(pointcut = "execution(* com.in28minutes.learn_spring_aop.aopexample.business.*.*(..))",
+	@AfterReturning(pointcut = "com.in28minutes.learn_spring_aop.aopexample.aspects.CommonPointcutConfig.dataPackageConfig()",
 			returning = "resultValue"
 	)
 	public void logMethodCallAfterSuccessfulExecution(JoinPoint joinPoint, Object resultValue) {
