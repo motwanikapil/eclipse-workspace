@@ -4512,3 +4512,16 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp
 
 !ENTRY ch.qos.logback.classic 1 0 2026-03-03 18:38:30.236
 !MESSAGE Logback config file: /home/kapil/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.101.20251017-1242.xml
+!SESSION 2026-03-04 20:17:44.427 -----------------------------------------------
+eclipse.buildId=4.38.0.20251204-0849
+java.version=21.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-04 20:18:07.341
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-04 20:18:12.056
+!MESSAGE Logback config file: /home/kapil/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.101.20251017-1242.xml
