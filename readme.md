@@ -179,3 +179,37 @@ the above is the default filter chain, if we want to modify filter chain then we
 	- @AfterReturning - do something only when a method returns successfully
 	- @AfterThrowing - Do something only when a method throws an exception
 	- @Around - do something around a method execution
+
+### Gradle
+- plugins
+ - gradle core is small and all the other things are plugins
+ - java plugin: adds tasks: compileJava, test, jar ( defines default layout )
+ - spring boot plugin: adds bootRun, bootJar, bootBuildImage and imports spring boot dependencies
+ - dependency management plugin: maven-like dependency management
+ - task graph: gradle calculates the most efficient order to run tasks
+ - custom tasks: define custom tasks 
+
+ ```
+     docker container run -d -p 5000:5000 in28min/hello-world-nodejs:0.0.1.RELEASE
+    docker container run -d -p 5000:5000 in28min/hello-world-java:0.0.1.RELEASE
+    docker container run -d -p 5000:5000 in28min/hello-world-python:0.0.1.RELEASE
+    docker container ls 
+    docker image ls
+    docker container stop cc
+    docker container run -d -p 5001:5000 in28min/hello-world-nodejs:0.0.1.RELEASE
+    docker container run -d -p 5002:5000 in28min/hello-world-nodejs:0.0.1.RELEASE
+    docker container run -p 5003:5000 in28min/hello-world-nodejs:0.0.1.RELEASE
+    docker container run -p 5003:5000 in28min/hello-world-nodejs:0.0.1.RELEASE
+     
+    docker --version
+    docker container ls
+    docker build -t in28min/hello-world-docker:v1 .
+    docker image list
+    docker run -d -p 5000:5000 in28min/hello-world-docker:v1
+    docker build -t in28min/hello-world-docker:v2 .
+    docker container run -d -p 5000:5000 in28min/hello-world-docker:v2
+    docker build -t in28min/hello-world-docker:v3 .
+    docker container run -d -p 5000:5000 in28min/hello-world-docker:v3
+    docker build -t in28min/hello-world-docker:v4 .
+```
+
