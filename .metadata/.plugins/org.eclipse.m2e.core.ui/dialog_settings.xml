@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="/home/kapil/eclipse-workspace/hello-world-java"/>
 			<item value="/home/kapil/eclipse-workspace/learn-jpa-and-hibernate"/>
 			<item value="/home/kapil/eclipse-workspace/learn-spring-boot"/>
 			<item value="/home/kapil/eclipse-workspace/learn-maven"/>
